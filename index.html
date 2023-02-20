@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter Shuffler</title>
+    <style>
+        .output {
+            white-space: pre-line;
+        }
+    </style>
+</head>
+<body>
+    <h1>Letter Shuffler</h1>
+    <p>this program shuffles the letters of your uploaded words. <br>Please upload a file. Notice that you can only upload .txt-files.
+        <strong>Your words or phrases should be separated by newline</strong></p>
+    <label for="fileinput">Choose a .txt-file</label>
+    <div class="fileinput">
+    <input type="file" id="fileinput" accept=".txt">
+    </div>
+    <br>
+    <label for="output">Here is a list of your shuffled words (as an example you see the phrase "here are some example words"):</label>
+    <div class="output" id="output"></div>
+
+    <script src="letter_shuffle.js"></script>
+</body>
+</html>
