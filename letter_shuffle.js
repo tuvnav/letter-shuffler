@@ -4,13 +4,13 @@ function shuffle(line) {
         let shuffledLineArr = []
         const phrase = line.split(' ')
         for (let word of phrase) { 
-            shuffledLineArr.push(shuffleWord(word))
+            shuffledLineArr.push(shuffleWord(word.toUpperCase()))
         }
         shuffledLine = shuffledLineArr.join(' ')
     }
     else {
         const word = line
-        shuffledLine = shuffleWord(word)
+        shuffledLine = shuffleWord(word.toUpperCase())
     }
     return shuffledLine
 }
@@ -92,7 +92,7 @@ function checkForWordChunks(word, shuffledWord) {
 const fileInput = document.getElementById('fileinput')
 const output = document.getElementById("output")
 
-let defaultString = "rhee era esmo \neampleex rdwos"
+let defaultString = "RHEE ERA ESMO \nEMAPLEEX RDWOS"
 output.textContent=defaultString
 
 fileInput.addEventListener('change', () => {
