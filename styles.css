@@ -1,0 +1,19 @@
+div.output {
+    width: 50%;
+    float: right;
+}
+div.input {
+    width: 50%;
+    float: left;
+}
+#output {
+    white-space: pre-line;
+}
+textarea {
+    margin-left: 15%;
+    margin-right: 15%;
+    resize: none;
+    width: 70%;
+    height: 300px;
+    overflow-y: scroll;
+}
